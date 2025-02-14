@@ -80,7 +80,7 @@ const CloudMartMainPage = () => {
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
   };
-
+ 
   const filteredProducts = products.filter((product) =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );
@@ -90,7 +90,7 @@ const CloudMartMainPage = () => {
       <Header />
       <main className="container mx-auto py-8 flex-grow px-4">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold">Featured Products</h2>
+          <h2 className="text-2xl font-bold">Featured Products on CloudMart</h2>
           <div className="relative">
             <input
               type="text"
